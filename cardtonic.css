@@ -1,0 +1,467 @@
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ nav {
+    width: 100%;
+    height: 13vh;
+    background-color: #FFFFFF;
+    border: 1px solid ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+ }
+
+.list a {
+    color: black;
+    text-decoration: none;
+}
+
+.list {
+    display:flex ;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.get a {
+     color: white;
+     text-decoration: none;
+     font-size: 17px;
+}
+.get {
+    background-color: #002444;
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+}
+.rightdiv {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.qr {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.right {
+    width: 50px;
+    height: 50px;
+    background-color: #F8F8F9;
+    border-radius:50% ;
+    display: flex;
+    border: none;
+    margin-left: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.right:hover {
+    border: 1px solid #D8DFEB;
+}
+.get:hover {
+    background-color: #7580EF;
+}
+.pro {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.resour {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.list {
+    display: flex;
+    align-items: center;
+}
+.dollar {
+    font-weight: 550;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+.shop {
+    font-weight: 550;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #64748B;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -180px;
+    width: 700px;
+    max-width: none;
+    height: 350px;
+    padding: 35px;
+    background-color:white;
+    border: 1px solid ;
+    border-radius: 25px;
+    row-gap: 38px;
+    column-gap: 35px;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr;
+}
+.pro:hover .dropdown {
+    display: grid;
+}
+
+.items {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    align-items: flex-start;
+    width: 330px;
+    color: #202B46;
+}
+.items img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.items span {
+    flex: 1;
+    min-width: 0;
+}
+.arrow {
+    transition: transform 0.3s ease;
+}
+.pro:hover .arrow {
+    transform: rotate(180deg);
+}
+.resour:hover .dropdown {
+    display: grid;
+}
+.resour:hover .arrow {
+    transform: rotate(180deg);
+}
+.qr:hover .dropdown2 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown2 {
+    position: absolute;
+    top: 100%;
+    width: 230px;
+    padding: 20px;
+    height: 60px;
+    right: -40px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: 1000;
+    box-sizing: border-box;
+    transform: translateX(10px);
+}
+.wallet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 20px;
+    width: 480px;
+    height: 45px;
+    color: #536783;
+    font-size: 20px;
+    margin: 30px auto 60px;
+    border: 1px solid #E5E7EB;
+    border-radius: 50px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.arrowright {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5147DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    /* transition: transform 0.3s ease; */
+}
+.arrowright img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.wallet:hover .arrowright {
+    transform: translateX(5px);
+}
+.cardtonic {
+    width: 100%;
+    max-width: 100%;
+    height: 6000px;
+}
+.heading {
+    font-size: 70px;
+    text-align: center;
+}
+.and {
+    color: #7580EF;
+}
+.head p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+.start {
+    width: 27vw;
+    height: 17vh;
+    background-color: #002444;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.start:hover {
+    background-color: #7580EF;
+    cursor: pointer;
+}
+.one {
+    font-size: 70px;
+    color: #D1E0E4;
+    margin-left: 170px;
+    margin-top: 150px;
+}
+.hold {
+    margin-left: 50px;
+
+}
+.hold h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.hold p{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.it span {
+    font-size: 17px;
+    color: #7580EF;
+    font-weight: 600;
+}
+.it {
+    display: flex;   
+    align-items: center; 
+    gap: 10px;
+}
+.bluearrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: white; */
+    border: 3px solid #7580EF;
+}
+.usd {
+    width: 80%;
+    height: 600px;
+    background: linear-gradient(90deg,#F0F2F5,#E1EAF6,#D1E1F8);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.holder img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 45px;
+}
+.usd:hover .holder img {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.sell {
+    width: 590px;
+    height: 740px;
+    background: linear-gradient(90deg,#E6F8F8,#f0EFEC,#FCE7DF);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card {
+    position: absolute;
+    bottom: 0;
+}
+.sell:hover .card {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.instant h1 {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+.instant p {
+    font-size: 22px;
+    margin-bottom: 23px;
+}
+.instant {
+    margin-top: 70px;
+    margin-left: 40px;
+
+}
+.buy {
+    width: 600px;
+    height: 740px;
+    background: linear-gradient(#1FD3E2,#ADEFF4,#F1FCFD);
+    position: relative;
+    margin-left: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.gift {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.card2 {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.buy:hover .card2 {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.virtual {
+    width: 80%;
+    height: 630px;
+    background: linear-gradient(90deg,#F0F2F5,#E1EAF6,#D1E1F8);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+.holder2 {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    margin-right: 40px;
+}
+.virtual:hover .holder2 {
+    transform: scale(1.1);
+    transition-duration: 2s;  
+}
+.sim {
+    width: 590px;
+    height: 740px;
+    background: linear-gradient(90deg,#DEFBFF,#DAF4FF,#D9F2FF);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card3 {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+.sim:hover .card3 {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.bill {
+    width: 600px;
+    height: 740px;
+    background: linear-gradient(90deg,#F0F2F5,#F1E8E0,#F3DBC6);
+    position: relative;
+    margin-left: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card1 {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+.bill:hover .card1 {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.just {
+    width: 80%;
+    height: 630px;
+    background: linear-gradient(90deg,#E0FDFF,#DBF5FF,#D7EFFF);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+.holder1 {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    margin-right: 40px;
+}
+.just:hover .holder1 {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.on {
+    color: #7580EF;
+    text-align: center;
+    margin-top: 140px;
+}
+.imgcard {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.new {
+    font-size: 70px;
+    color: #D1E0E4;
+    margin-left: 170px;
+    margin-top: 110px;
+}
+.container {
+    width: 33vw ;
+    height: 50vh;
+    background-color: #F8F8F9;
+    flex-shrink:0 ;
+    border-radius: 20px;
+}
+.containerdiv {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}

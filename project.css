@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0b0b0f;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 24px 0 80px;
+    z-index: 100;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.nav-content {
+    display: contents;
+}
+
+.lang-selector {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    color: #111827;
+    background: transparent;
+    margin-right: 16px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4a4a52;
+    text-decoration: none;
+}
+
+.audience-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    background: #f1f1f4;
+    border-radius: 999px;
+    flex-shrink: 0;
+}
+
+.audience-toggle .nav-link {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0b0b0f;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.audience-toggle input {
+    position: absolute;
+    opacity: 0;
+}
+
+.audience-toggle input:focus-visible + .nav-link {
+    outline: 2px solid #4b39ef;
+    outline-offset: 2px;
+}
+
+#personal:checked + .nav-link,
+#business:checked + .nav-link {
+    background: #0b0b0f;
+    color: #fff;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: min(360px, 40vw);
+    z-index: 1;
+}
+
+.nav-menu-toggle,
+.menu-toggle {
+    display: none;
+}
+
+.btn-signup {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background: #4b39ef;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+/* Custom Language Dropdown Styling */
+.custom-dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  color: #000000;
+}
+
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #dbdbdb;
+  border-radius: 12px;
+  padding: 12px 4px;
+  min-width: 210px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lang-selector:hover .custom-dropdown-menu,
+.lang-selector:focus-within .custom-dropdown-menu {
+  display: block;
+}
+
+.custom-dropdown-menu .dropdown-item {
+  color: #000000;
+  padding: 8px 16px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.custom-dropdown-menu li:first-child .dropdown-item {
+  font-weight: 700;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000000;
+}
+
+
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0b0b0f;
+}
+
+.logo-placeholder img {
+    display: block;
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.pill-item {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0b0b0f;
+    padding: 6px 14px;
+    border-radius: 16px;
+}
+
+.pill-item.active {
+    background: #0b0b0f;
+    color: #fff;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4b39ef;
+    text-decoration: none;
+    border: 1px solid #dcdbe7;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.hero-section {
+    width: 100%;
+    height: 85vw;
+    overflow: hidden;
+    background-color: #0b1bcc;
+    background-image: url(hero\ bg\ \(1\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-marquee-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: marquee-left 24s linear infinite;
+    will-change: transform;
+}
+
